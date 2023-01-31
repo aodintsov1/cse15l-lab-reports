@@ -51,5 +51,6 @@
   	![Image](symptom.png)
   
 ## Part 3 
-  * Something I learned from 
+  * Something I learned from week 2 is how to create a server using Java. 
+  * I also learned how to update the server with information in the url.
   
