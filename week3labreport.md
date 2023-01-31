@@ -30,7 +30,7 @@
 ## Part 2
   * A failure inducing input for ArrayTests.java is {1, 2, 3}:
   `@Test 
-	public void testReverseInPlace() {
+    public void testReverseInPlace() {
     int[] input1 = { 3 };
     int [] input2 = {1, 2, 3};
     ArrayExamples.reverseInPlace(input1);
@@ -39,16 +39,16 @@
     assertArrayEquals(new int[]{3, 2, 1}, input2);
 	}`
   * An input that doesn't produce a failure for ArrayTests.java is {3}:
-  `	@Test 
-	public void testReverseInPlace() {
+    `@Test 
+    public void testReverseInPlace() {
     int[] input1 = { 3 };
     ArrayExamples.reverseInPlace(input1);
     ArrayExamples.reverseInPlace(input2);
     assertArrayEquals(new int[]{ 3 }, input1);
-	}
+	}`
   * The symptom as the output of running the tests:
   
-  ![Image](symptom.png)
+  	![Image](symptom.png)
   
 ## Part 3 
   * Something I learned from 
