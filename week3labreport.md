@@ -29,27 +29,44 @@
 
 ## Part 2
   * A failure inducing input for ArrayTests.java is {1, 2, 3}:
-  `@Test 
-    public void testReverseInPlace() {
+  ```
+  @Test 
+  public void testReverseInPlace() {
     int[] input1 = { 3 };
     int [] input2 = {1, 2, 3};
     ArrayExamples.reverseInPlace(input1);
     ArrayExamples.reverseInPlace(input2);
     assertArrayEquals(new int[]{ 3 }, input1);
     assertArrayEquals(new int[]{3, 2, 1}, input2);
-	}`
+  }
+  ```
   * An input that doesn't produce a failure for ArrayTests.java is {3}:
-    `@Test 
-    public void testReverseInPlace() {
+  ``` 
+  @Test
+  public void testReverseInPlace() {
     int[] input1 = { 3 };
     ArrayExamples.reverseInPlace(input1);
-    ArrayExamples.reverseInPlace(input2);
     assertArrayEquals(new int[]{ 3 }, input1);
-	}`
+  }
+  ```
   * The symptom as the output of running the tests:
   
   	![Image](symptom.png)
-  
+  * The fixed code:
+  ```
+  static void reverseInPlace(int[] arr) {
+    int[] reversedArr = new int[arr.length];
+    for (int i = 0, j = arr.length -1; j >= 0; i++, j--)
+    {
+      reversedArr[i] = [j];
+    }
+    for (int i = 0; i < arr.length; i++)
+    {
+      arr[i] = reversedArr[i];
+    }
+  }
+  ```
+  * This fixes the code because reverseInPlace() originally doesn't save the original items in the array, causing index 2 not to be changed because the original 1 was already replaced by 3. The fixed code keeps the original array but creates a reversed copy of it.
 ## Part 3 
   * Something I learned from week 2 is how to create a server using Java. 
   * I also learned how to update the server with information in the url.
