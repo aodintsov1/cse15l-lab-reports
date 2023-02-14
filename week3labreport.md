@@ -67,6 +67,7 @@
   }
   ```
   * This fixes the code because reverseInPlace() originally doesn't save the original items in the array, causing index 2 not to be changed because the original 1 was already replaced by 3. The fixed code keeps the original array but creates a reversed copy of it.
+
 ## Part 3 
   * Something I learned from week 2 is how to create a server using Java. 
   * I also learned how to update the server with information in the url.
