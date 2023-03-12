@@ -1,9 +1,14 @@
 # Lab Report 4
 
+Commands run beforehand:
+* `ssh cs15lwi23awb@ieng6.ucsd.edu`
+* `logout`
+* `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java`
+* `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests.java`
 ## 4. Log into ieng6
 
-* Keys pressed: `<up><up><up><up><enter>`
-* This went up four steps in my history for the command to login and then I entered it
+* Keys pressed: `<up><up><up><enter>`
+* Using the up key, you can go to your previously entered commands so pressing this three times goes to the previously entered command, `ssh cs15lwi23awb@ieng6.ucsd.edu` (`logout` does not count as a command)
 
   ![Image](lab7screenshot1.png)
 ## 5. Clone your fork of the repository from your Github account
