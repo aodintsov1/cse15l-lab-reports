@@ -3,7 +3,7 @@
 Commands run beforehand:
 * `ssh cs15lwi23awb@ieng6.ucsd.edu`
 * `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java`
-* `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests.java`
+* `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests`
 * `logout`
 ## 4. Log into ieng6
 
@@ -26,7 +26,7 @@ Commands run beforehand:
 * Keys pressed `<up><up><up><up><up><enter>`
 * This went up to the previously entered command, `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java`, to compile the .java files in the directory because `*.java` makes the command apply to all the files ending in `.java`
 * Keys pressed `<up><up><up><up><up><enter>`
-* This then went to the previous command, `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests.java`
+* This then went to the previous command, `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests`, to run the ListExamplesTests file
   ![Image](lab7screenshot3.png)
 ## 7. Edit the code file to fix the failing test
   ![Image](lab7screenshot4.png)
