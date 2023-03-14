@@ -49,3 +49,9 @@ Commands run beforehand:
 
   ![Image](lab7screenshot5.png)
 ## 9. Commit and push the resulting change to your Github account
+
+* Enter `git add ListExamples.java` which tells git to include the file in the update
+* Then enter `git commit -m "new"` which tells git to store the changes in your git directory
+* Finally, enter `git push` to push the changes to the remote directory
+
+  ![Image](lab7screenshot6.png)
