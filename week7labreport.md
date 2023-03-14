@@ -27,9 +27,25 @@ Commands run beforehand:
 * This went up to the previously entered command, `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java`, to compile the .java files in the directory because `*.java` makes the command apply to all the files ending in `.java`
 * Keys pressed `<up><up><up><up><up><enter>`
 * This then went to the previous command, `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests`, to run the ListExamplesTests file
+* You should get a message saying that a test failed
+
   ![Image](lab7screenshot3.png)
 ## 7. Edit the code file to fix the failing test
+
+* To open the ListExamples file in nano, enter `nano ListExamples.java`
+* To skip to line 43, column 13 you first use the `Ctrl+Shift+ "- key"` combination to get the prompt asking for the line and column number
+* You then type `43,13`, hit `enter` and you are at line 43, column 13
+* I then did `<Backspace><2>` to correct the mistake, changing Index1 to Index2
+* The next keystrokes were `<Ctrl-X>`, which exited the file, `<Y>`, which confirmed the changes, and `<enter>`, to confirm the file name staying the same
+
   ![Image](lab7screenshot4.png)
 ## 8. Run the tests, demonstrating that they now succeed
 
+* Keys pressed `<up><up><up><enter>`
+* This went up to the previously entered command, `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java`, to compile the .java files in the directory because `*.java` makes the command apply to all the files ending in `.java`
+* Keys pressed `<up><up><up><enter>`
+* This then went to the previous command, `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests`, to run the ListExamplesTests file
+* This time, you should get a message saying that the tests run OK
+
+  ![Image](lab7screenshot5.png)
 ## 9. Commit and push the resulting change to your Github account
