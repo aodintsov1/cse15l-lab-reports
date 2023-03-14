@@ -18,3 +18,5 @@
 
   ![Image](lab9screenshot2.png)
   ![Image](lab9screenshot3.png)
+
+* You can see the tests failing at first then succeeding later on in the script, as expected
