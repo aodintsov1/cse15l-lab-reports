@@ -14,3 +14,7 @@
 
 * I then exit the bash script using `<Ctrl-X>` to quit the file, `<Y>` to confirm saving the file, and `<enter>` to confirm the file name
 * To run the file, I use `bash lab4bash.sh`
+* `lab4bash.sh` being run:
+
+  ![Image](lab9screenshot2.png)
+  ![Image](lab9screenshot3.png)
