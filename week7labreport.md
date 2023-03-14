@@ -23,8 +23,10 @@ Commands run beforehand:
 ## 6. Run the tests, demonstrating that they fail
   
 * To go into the lab7 directory, I typed in `cd lab7`, which changed the directory to the lab7 folder
-* <up><up><up><up><up>
-* <up><up><up><up><up>
+* Keys pressed `<up><up><up><up><up><enter>`
+* This went up to the previously entered command, `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java`, to compile the .java files in the directory because `*.java` makes the command apply to all the files ending in `.java`
+* Keys pressed `<up><up><up><up><up><enter>`
+* This then went to the previous command, `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests.java`
   ![Image](lab7screenshot3.png)
 ## 7. Edit the code file to fix the failing test
   ![Image](lab7screenshot4.png)
