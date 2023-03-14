@@ -2,7 +2,7 @@
 
 ## Lab report 4 update
 
-* A faster way of doing lab report 4, even though it was against the rules, is to use a bash script.
+* A faster way of doing lab report 4, even though it was against the rules, is to use a bash script
 * The bash script makes things much faster as it does not require input from the user outside of nano where you need to edit the file, automating most of the steps
 * I created a bash script with the `nano lab4bash.sh` command, which also opens the file
 * The first line is `#!/bin/bash` as it begins the script and specifies that it is using the bash interpreter
